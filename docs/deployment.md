@@ -14,8 +14,10 @@ The current test deployment uses:
 - `carbonio-uk-shell-i18n 1.0.0-1`, a one-file `dpkg-divert` overlay for the
   Shell `uk.json` resource.
 
-The exact backup paths, checksums, verification and rollback commands are in
-[`reports/live-uk-locale-deployment-20261008.md`](../reports/live-uk-locale-deployment-20261008.md).
+The exact backup paths, checksums, and host-specific rollback evidence are
+intentionally kept outside this public repository. Do not copy those local
+paths into an upstream issue or pull request. Recreate the backup and verify
+package ownership on the target system before any new deployment.
 
 The overlay package is deliberately separate from the monolithic
 `carbonio-webui-i18n` package because the latter contains paths also owned by
