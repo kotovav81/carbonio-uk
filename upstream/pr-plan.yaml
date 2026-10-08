@@ -1,0 +1,92 @@
+schema: 1
+status: ready_for_upstream_review
+locale: uk
+source_locale: en
+reference_locale: ru
+review_policy: keep-existing-uk
+excluded_review_keys: 20
+pull_requests:
+  - id: shell-i18n
+    repository: https://github.com/Zextras/carbonio-shell-ui-i18n
+    component: shell
+    file: translations/uk/shell/uk.json
+    type: translation
+    commit: e462a874c5594b4ecad2fe1a74ed84f7c9231858
+  - id: admin-login-i18n
+    repository: https://github.com/Zextras/carbonio-admin-login-ui-i18n
+    component: admin_login
+    file: translations/uk/admin_login/uk.json
+    type: translation
+    commit: 9c69667f237fc818f79ce0b4399f4c1b9f0216d7
+  - id: login-i18n
+    repository: https://github.com/Zextras/carbonio-login-ui-i18n
+    component: login
+    file: translations/uk/login/uk.json
+    type: translation
+    commit: 269baf4175bb7cc0b35020fd18d8f3be7f996d89
+  - id: auth-ui-i18n
+    repository: https://github.com/Zextras/carbonio-auth-ui-i18n
+    component: auth_ui
+    file: translations/uk/auth_ui/uk.json
+    type: translation
+    commit: e0d140ce40a15440157309edefd1f5d8df5f4ee9
+  - id: auth-i18n
+    repository: https://github.com/Zextras/carbonio-auth-i18n
+    component: auth_properties
+    file: translations/uk/auth_properties/com_zextras_module_auth_uk.properties
+    type: translation
+    commit: 2450d982e2c00e6a645e3888b3dc1875fff73209
+  - id: mails-i18n
+    repository: https://github.com/Zextras/carbonio-mails-ui-i18n
+    component: mail
+    file: translations/uk/mail/uk.json
+    type: translation
+    commit: d82e0c9a52bfc26d7433283529cc940ddc558e47
+  - id: calendars-i18n
+    repository: https://github.com/Zextras/carbonio-calendars-ui-i18n
+    component: calendar
+    file: translations/uk/calendar/uk.json
+    type: translation
+    commit: 7652733dbe1b76a2bba9f5112908b9c0c31b73c7
+  - id: contacts-i18n
+    repository: https://github.com/Zextras/carbonio-contacts-ui-i18n
+    component: contacts
+    file: translations/uk/contacts/uk.json
+    type: translation
+    commit: 3c003bd31c9853ccde5b65d9bf32ed34e26dc2d1
+  - id: files-i18n
+    repository: https://github.com/Zextras/carbonio-files-ui-i18n
+    component: files
+    file: translations/uk/files/uk.json
+    type: translation
+    commit: e9fcd26bd673049f2a166d6addb8d28b08842b33
+  - id: search-i18n
+    repository: https://github.com/Zextras/carbonio-search-ui-i18n
+    component: search
+    file: translations/uk/search/uk.json
+    type: translation
+    commit: 352fd77808482df579ef77a9b31679a5f97e3173
+  - id: tasks-i18n
+    repository: https://github.com/Zextras/carbonio-tasks-ui-i18n
+    component: tasks
+    file: translations/uk/tasks/uk.json
+    type: translation
+    commit: e92fe7c688605199ca865bbc3ce53358ce715db1
+  - id: collaboration-i18n
+    repository: https://github.com/Zextras/carbonio-ws-collaboration-ui-i18n
+    component: collaboration
+    file: translations/uk/collaboration/uk.json
+    type: translation
+    commit: be60555a1e87ad4b2a833773e928845facb589b3
+  - id: storages-i18n
+    repository: https://github.com/Zextras/carbonio-storages-ui-i18n
+    component: storages
+    file: translations/uk/storages/uk.json
+    type: translation
+    commit: d4adbe234bd32a90852995581b591e7cf699a59b
+  - id: shell-locale-selector
+    repository: https://github.com/Zextras/carbonio-shell-ui
+    component: shell
+    file: patches/shell/0001-carbonio-shell-ui-add-uk-locale.patch
+    type: functional
+    commit: 97bfc56fb044760cc0c36ce0542974638e9c9c4b
