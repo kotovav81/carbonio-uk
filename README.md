@@ -21,8 +21,9 @@ glossary extraction, `KEEP EXISTING UK` merge, controlled mock pipeline и
 
 - 13 audit-ready components;
 - Admin Console — `active/blocked`, публичный i18n source не подтверждён;
-- 2944 missing/empty UK values;
-- 19 unit tests проходят;
+- исходный baseline содержал 2944 missing/empty UK values;
+- staged candidate содержит 2924 проверенных переводов и 20 строк review;
+- 24 unit tests проходят локально;
 - реальный AI pilot не запускался.
 
 ## Быстрый старт
