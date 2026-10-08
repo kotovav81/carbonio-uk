@@ -82,3 +82,6 @@ python3 -m unittest discover -s tests -v
 ```
 
 The project is licensed under AGPL-3.0-only. See [LICENSE](LICENSE).
+
+For a resumable project state and continuation checklist, see
+[`docs/handoff-20261008.md`](docs/handoff-20261008.md).
