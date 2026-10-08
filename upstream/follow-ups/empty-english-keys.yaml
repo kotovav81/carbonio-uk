@@ -1,0 +1,90 @@
+schema: 1
+status: proposal_only
+purpose: "Clarification and follow-up for catalog keys whose English value is empty"
+source_policy: "EN source is empty; proposals use upstream code fallbacks, existing Ukrainian terminology, and non-empty peer locales only as context"
+apply_to_main_catalog: false
+items:
+  - component: auth_ui
+    key: common.passwordCopied
+    proposed_uk: "Пароль скопійовано"
+    english_source: ""
+    peer_evidence: [bs]
+    context: "Auth UI copy-success notification; analogous code keys use скопійовано."
+    confidence: medium
+  - component: auth_ui
+    key: snackbar.error
+    proposed_uk: "Щось пішло не так. Спробуйте ще раз"
+    english_source: ""
+    peer_evidence: [bs]
+    context: "Shell/Auth fallback text: Something went wrong, please try again."
+    confidence: high
+  - component: mail
+    key: folder_panel.modal.lists-item.empty
+    proposed_uk: "Список порожній"
+    english_source: ""
+    peer_evidence: [bs]
+    context: "Folder panel empty-list message; exact upstream wording should be confirmed."
+    confidence: medium
+  - component: mail
+    key: label.draft_save_in_progress
+    proposed_uk: "Триває збереження чернетки"
+    english_source: ""
+    peer_evidence: [bs, hu]
+    code_fallback: "Saving draft in progress"
+    confidence: high
+  - component: mail
+    key: label.save_draft.incomplete_response
+    proposed_uk: "Відповідь під час збереження чернетки неповна"
+    english_source: ""
+    peer_evidence: [bs]
+    code_fallback: "The save draft response is incomplete"
+    confidence: high
+  - component: mail
+    key: settings.font_size_other
+    proposed_uk: "{{count}} пт"
+    english_source: ""
+    peer_evidence: [ar, bs, el, es, eu, fr, hi, hu, id, ky, pt, th]
+    context: "Existing UK catalog uses {{count}} пт for font_size_one."
+    confidence: high
+  - component: calendar
+    key: label.attendee_one
+    proposed_uk: "Учасник"
+    english_source: ""
+    peer_evidence: [bs, pl, ru, de, es, fr, it, pt, tr]
+    context: "No count placeholder exists in the English key."
+    confidence: high
+  - component: calendar
+    key: label.search_hint
+    proposed_uk: "Підказка для пошуку"
+    english_source: ""
+    peer_evidence: [bs]
+    context: "Peer locale describes a search hint; UI placement still needs confirmation."
+    confidence: medium
+  - component: calendar
+    key: label.select_in
+    proposed_uk: "Виберіть у"
+    english_source: ""
+    peer_evidence: [bs]
+    context: "Peer locale uses a select-in prompt; UI context should be confirmed."
+    confidence: medium
+  - component: calendar
+    key: message.search_hints
+    proposed_uk: "Підказки для пошуку"
+    english_source: ""
+    peer_evidence: [bs]
+    context: "Plural search-hints label; UI context should be confirmed."
+    confidence: medium
+  - component: calendar
+    key: no_title
+    proposed_uk: "Без назви"
+    english_source: ""
+    peer_evidence: [bs]
+    context: "Matches existing Ukrainian calendar/mail terminology."
+    confidence: high
+  - component: contacts
+    key: snackbar.import_contacts_success_other
+    proposed_uk: "{{number}} контактів імпортовано й додано до вибраної адресної книги"
+    english_source: ""
+    peer_evidence: [ar, bs, el, es, fr, hi, hu, id, it, ka, ky, pt, sl, th, tr]
+    context: "Preserves the upstream {{number}} placeholder; UK catalog already uses адресна книга."
+    confidence: high
