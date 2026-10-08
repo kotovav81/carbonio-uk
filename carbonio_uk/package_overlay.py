@@ -129,7 +129,7 @@ def run(args: argparse.Namespace) -> int:
 
 def add_parser(subparsers: argparse._SubParsersAction[argparse.ArgumentParser]) -> None:
     parser = subparsers.add_parser("package-overlay", help="build a deterministic non-installing /opt/zextras overlay")
-    parser.add_argument("--merged-root", default="translations/merged-2924")
+    parser.add_argument("--merged-root", default="translations/uk")
     parser.add_argument("--snapshot", default="translations/live-carbonio-20261008")
     parser.add_argument("--manifest", default="manifest.yaml")
     parser.add_argument("--output-dir", default="artifacts/package-staging-2924")

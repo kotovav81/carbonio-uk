@@ -1,44 +1,43 @@
-# carbonio-uk
+# Carbonio Ukrainian Localization
 
-Воспроизводимый проект украинской локализации Zextras Carbonio.
+Community tooling and reviewed Ukrainian translation catalogs for the
+[Zextras Carbonio](https://github.com/Zextras) web client.
 
-Проект сравнивает English/Russian/Ukrainian каталоги, сохраняет существующие
-качественные украинские переводы, находит новые английские ключи после релизов
-и готовит проверяемые upstream-friendly изменения.
+The project keeps Ukrainian translations synchronized with upstream releases.
+English defines catalog structure, existing Ukrainian values are preserved,
+and Russian is reference context only.
 
-## Принцип
+## Current status
 
-`EN` — source of truth для структуры. `UK` — source of truth для уже готовых
-переводов. `RU` — справочный язык для QA и контекста, но не источник перевода.
+- 13 active translation components discovered and pinned by commit SHA.
+- 2,924 reviewed candidate translations staged in `translations/uk/`.
+- 20 ambiguous strings remain in local review and are not included here.
+- 24 unit tests pass locally; CI runs on every push and pull request.
+- Admin Console i18n is tracked as active/blocked until its public source is
+  confirmed.
+- No production files, credentials, mailbox data, or live snapshots are part
+  of this repository.
 
-## Статус
+## Components
 
-Реализованы discovery, pinned fetch, recursive leaf-key audit, validator,
-glossary extraction, `KEEP EXISTING UK` merge, controlled mock pipeline и
-20-строчный controlled real-pilot preview.
+The manifest covers Shell, Login, Admin Login, Auth, Mail, Calendar, Contacts,
+Files, Search, Tasks, Collaboration, Storages, and Auth properties.
 
-Текущий baseline:
+Translation catalogs are separate from functional patches. The Shell
+locale-selector patch is in `patches/shell/` and is intended for a separate
+upstream pull request.
 
-- 13 audit-ready components;
-- Admin Console — `active/blocked`, публичный i18n source не подтверждён;
-- исходный baseline содержал 2944 missing/empty UK values;
-- staged candidate содержит 2924 проверенных переводов и 20 строк review;
-- 24 unit tests проходят локально;
-- реальный AI pilot не запускался.
-
-## Быстрый старт
+## Quick start
 
 ```bash
 python3 -m venv .venv
 . .venv/bin/activate
-pip install -e '.[dev]'
+python -m pip install -e '.[dev]'
+python -m unittest discover -s tests -v
 python -m carbonio_uk --help
-python -m carbonio_uk audit --help
-python -m carbonio_uk validate --help
-python -m carbonio_uk pilot --help
 ```
 
-Полный workflow после реализации команд:
+## Workflow
 
 ```bash
 python -m carbonio_uk discovery
@@ -50,115 +49,35 @@ python -m carbonio_uk translate --dry-run --provider mock
 python -m carbonio_uk report
 ```
 
-Текущий безопасный workflow заканчивается на `translate --dry-run`: discovery
-фиксирует репозитории и commit SHA, fetch загружает ресурсы в
-`.cache/upstream/`, audit рекурсивно сравнивает leaf-ключи, validate проверяет
-структуру и placeholders, glossary извлекает кандидаты из существующего UK, а
-dry-run только строит план. Политика merge — `KEEP EXISTING UK`. Без
-`--dry-run` в обычном translation workflow разрешён только явно выбранный
-offline provider `mock`; OpenAI доступен исключительно через отдельный gated
-pilot.
+The default workflow is read-only until an explicit merge/review command is
+used. Existing Ukrainian translations are never overwritten implicitly.
+OpenAI support is optional, disabled by default, and requires an explicit
+execution flag. CI never calls an AI provider.
 
-Controlled mock pipeline после review выполняется только явно:
+## Repository layout
 
-```bash
-python -m carbonio_uk review apply --component auth_ui --key instruction.changePassword
-python -m carbonio_uk translate --provider mock --component login --limit 15 --batch-size 5
-python -m carbonio_uk merge --component login --review-approved
-python -m carbonio_uk validate --component login --uk-root translations/merged
-python -m carbonio_uk report
+```text
+carbonio_uk/       audit, fetch, merge, validation, review and CLI code
+translations/uk/   reviewed Ukrainian catalogs by component
+glossary/          approved Ukrainian terminology
+patches/           separate functional locale-selector patch
+tests/             offline unit tests and fixtures
+docs/              architecture, build, deployment and contribution notes
 ```
 
-Mock batches имеют content-addressed cache и checkpoint. Merge всегда пишет в
-`translations/merged/`; cached upstream UK не перезаписывается. Review sidecar
-может заменить существующий UK только после `review apply` и при явном флаге
-`merge --review-approved`. OpenAI provider в mock pipeline не используется.
+Generated caches, live snapshots, review workbooks, reports, and package
+artifacts are intentionally ignored by Git.
 
-Подготовленный real-translation pilot описан в
-[`docs/real-translation-pilot.md`](docs/real-translation-pilot.md). Команда
-`python -m carbonio_uk pilot` только формирует preview 10 Login + 10 Mail.
-OpenAI execution требует одновременно `--provider openai --execute` и explicit
-`--model`; результаты сохраняются только в `review/pending/`.
+## Contributing
 
-Перед любым решением нужно просмотреть 20 строк:
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting changes. Translation
+pull requests should target one upstream i18n repository at a time and include
+the upstream commit used for the audit. Do not include branding, private URLs,
+production paths, credentials, or deployment-specific changes.
 
 ```bash
-python -m carbonio_uk pilot
-less reports/real-pilot-plan.md
+python3 -m py_compile carbonio_uk/*.py carbonio_uk/providers/*.py carbonio_uk/formats/*.py
+python3 -m unittest discover -s tests -v
 ```
 
-После явно разрешённого pilot каждая строка решается отдельно:
-
-```bash
-python -m carbonio_uk review decide \
-  --component login \
-  --key FULL.KEY \
-  --decision approve \
-  --note "reviewed"
-
-python -m carbonio_uk review decide \
-  --component mail \
-  --key FULL.KEY \
-  --decision reject \
-  --note "needs revision"
-```
-
-Approve/reject создаёт decision sidecar и не выполняет автоматический merge.
-
-Если OpenAI API недоступен, тот же набор из 20 строк экспортируется для
-ручного заполнения:
-
-```bash
-python -m carbonio_uk manual export
-# заполнить только uk_candidate в review/manual-pilot.yaml
-python -m carbonio_uk manual import
-```
-
-Import проверяет UTF-8, non-empty, точные placeholder names и markup. Результаты
-попадают только в `review/pending/`; automatic merge отключён.
-
-Полный offline TSV для передачи во внешний review-проект содержит все текущие
-missing/empty/null UK leaf-значения:
-
-```bash
-python -m carbonio_uk manual export --output review/manual-pilot.tsv
-# заполнить только колонку UK candidate
-python -m carbonio_uk manual import --source review/manual-pilot.tsv
-```
-
-Колонки `placeholders` и `markup` нельзя редактировать: import сверяет их с EN,
-затем проверяет UTF-8, non-empty, placeholders и markup каждой строки. Импорт
-создаёт только `review/pending/` и validation report; merge не запускается.
-
-Проверенный полный TSV можно объединить только в отдельный staging overlay с
-политикой `KEEP EXISTING UK`:
-
-```bash
-python -m carbonio_uk stage-tsv \
-  --source review/2924/manual-pilot-complete-uk.tsv \
-  --review review/2924/manual-review-complete.tsv \
-  --output-root translations/merged-2924 \
-  --report reports/staged-merge-2924.json
-```
-
-Команда сверяет TSV с pinned EN/RU, валидирует каждый непустой кандидат,
-исключает review-строки, не перезаписывает непустой existing UK и автоматически
-создаёт post-merge audit/validation reports. Это staging, не deployment.
-
-Live evidence snapshot сравнивается с pinned upstream без изменения снимка:
-
-```bash
-python -m carbonio_uk live-compare \
-  --snapshot translations/live-carbonio-20261008
-```
-
-Сводка записывается в `reports/live-vs-upstream.md`, а полный перечень
-missing/extra/changed leaf-ключей — в `reports/live-vs-upstream.json`.
-Legacy `opt/zextras/admin/iris` не считается новой Admin Console; новая Admin
-Console остаётся `active/blocked` из-за отсутствия публичного i18n-источника.
-
-## Ограничения
-
-AI-перевод не запускается автоматически и не является обязательным для CI.
-Production deployment выполняется только через package/build workflow после
-backup и проверки rollback.
+The project is licensed under AGPL-3.0-only. See [LICENSE](LICENSE).

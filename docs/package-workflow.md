@@ -92,7 +92,7 @@ artifact.
 
 ```bash
 python -m carbonio_uk package-overlay \
-  --merged-root translations/merged-2924 \
+  --merged-root translations/uk \
   --snapshot translations/live-carbonio-20261008 \
   --output-dir artifacts/package-staging-2924 \
   --report reports/package-staging-2924.json
