@@ -17,6 +17,9 @@ reports/locale-registry-investigation*.md
 artifacts/
 artifacts/package-staging-*/rootfs/
 artifacts/package-staging-*/*.tar
+# Local audit and human-review workspaces are not upstream payloads.
+reports/
+review/
 review/pending/
 
 # Temporary/generated reports. Baseline discovery/audit/validation/glossary,
