@@ -10,8 +10,9 @@ and Russian is reference context only.
 ## Current status
 
 - 13 active translation components discovered and pinned by commit SHA.
-- 2,924 reviewed candidate translations staged in `translations/uk/`.
-- 20 ambiguous strings remain in local review and are not included here.
+- 2,932 reviewed candidate translations staged in `translations/uk/`.
+- 12 keys with empty English source values remain excluded and documented in
+  the local review workbook.
 - 24 unit tests pass locally; CI runs on every push and pull request.
 - Admin Console i18n is tracked as active/blocked until its public source is
   confirmed.

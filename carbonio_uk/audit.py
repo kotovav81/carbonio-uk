@@ -16,7 +16,7 @@ from .manifest import audit_components, load_manifest
 
 
 PLACEHOLDER = re.compile(r"(?:\{\{[^{}]+\}\}|\{[^{}]+\}|%\([^)]+\)[a-zA-Z]|%[0-9$]*[a-zA-Z])")
-TAG = re.compile(r"</?([A-Za-z][A-Za-z0-9:-]*)\b[^>]*>")
+TAG = re.compile(r"</?(?:strong|br|a|span|em|b|i|p|code|ul|ol|li)\b[^>]*>", re.IGNORECASE)
 CYRILLIC_RUSSIAN = re.compile(r"[ыэъёЫЭЪЁ]")
 IDENTICAL_ALLOWLIST = {"API", "DNS", "HTTP", "HTTPS", "IMAP", "IP", "POP3", "SMTP", "URL", "WebDAV"}
 

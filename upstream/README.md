@@ -11,8 +11,8 @@ against the pinned English catalog in `manifest.yaml`. Do not combine catalogs
 from different repositories in one pull request.
 
 The exact repository, file, and audit commit for every pull request are listed
-in [`pr-plan.yaml`](pr-plan.yaml). The 20 review-only keys are intentionally
-excluded from the submission set.
+in [`pr-plan.yaml`](pr-plan.yaml). Twelve keys with empty English source
+values are intentionally excluded from the submission set.
 
 ## Functional Shell pull request
 
@@ -32,14 +32,14 @@ python3 -m carbonio_uk validate --uk-root translations/uk
 python3 -m unittest discover -s tests -v
 ```
 
-The staged catalogs currently have 20 deliberate review gaps, two harmless
-interpolation-spacing warnings, and one pre-existing Auth UI markup mismatch.
-These must be described in the PRs or resolved before claiming full coverage.
+The staged catalogs currently have twelve deliberate source gaps. The former
+interpolation-spacing warnings and Auth UI markup mismatch have been resolved
+in the staged catalogs and covered by the validator.
 
 ## What is not ready
 
 - `carbonio-admin-console-ui` has no confirmed public i18n repository in the
   current discovery and therefore has no translation PR here.
-- The 20 review keys have no reliable English source or require product
-  decisions; they are not silently invented.
+- The twelve empty-English keys have no reliable source-of-truth value; they
+  are not silently invented.
 - Package-manager publication and deployment are outside these upstream PRs.

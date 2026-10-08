@@ -21,6 +21,9 @@
     }
   },
   "label": {
+    "no_identity_selected": "<Ідентичність не вибрано>",
+    "no_name": "<Без імені>",
+    "no_subject_with_tags": "<Без теми>",
     "close": "Закрити",
     "decrypt_message": "Розшифрувати повідомлення",
     "delete": "Видалити",

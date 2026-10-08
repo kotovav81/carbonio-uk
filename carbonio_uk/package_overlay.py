@@ -94,7 +94,7 @@ def build_overlay(manifest_path: Path, merged_root: Path, snapshot: Path, output
         ],
         "gates_before_install": [
             "Complete focused linguistic QA for high-use Mail and Calendar strings.",
-            "Resolve or explicitly accept the 20 review rows and existing auth_ui markup mismatch.",
+            "Resolve or explicitly accept the 12 empty-English review rows.",
             "Test package ownership/conflicts and UI loading in a disposable Carbonio environment.",
             "Verify language switching, fallback, Login, Mail, Calendar, and Contacts.",
         ],

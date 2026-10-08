@@ -48,7 +48,7 @@
   "server_not_responding": "Сервер не відповідає. Зверніться до адміністратора вашого сервера",
   "server_unreachable": "Помилка 502: Служба недоступна - спробуйте пізніше.",
   "something_went_wrong": "Щось пішло не так. Будь ласка, зверніться до адміністратора.",
-  "still_have_access_to_recovery_email": "Ви все ще маєте доступ до <strong>{{ recovery_email}}</strong>?",
+  "still_have_access_to_recovery_email": "Ви все ще маєте доступ до <strong>{{ recovery_email }}</strong>?",
   "submit": "Надіслати",
   "trust_device_and_ip": "Довіряйте цьому пристрою та IP-адресі",
   "two_step_authentication": "Двоетапна автентифікація",
@@ -56,7 +56,7 @@
   "unsupported_version": "Сервер надіслав невірну відповідь. Зверніться до адміністратора вашого сервера",
   "username": "Ім’я користувача",
   "validate_code": "Перевірити код",
-  "validation_code_was_sent_to_recovery_email": "Код підтвердження було надіслано на <strong>{{ recovery_email }}</strong> і буде дійсним протягом 10 хвилин. У вас є {{ recoveryAttemptsLeft}} спроб. Введіть код у форму нижче.",
+  "validation_code_was_sent_to_recovery_email": "Код підтвердження було надіслано на <strong>{{ recovery_email }}</strong> і буде дійсним протягом 10 хвилин. У вас є {{ recoveryAttemptsLeft }} спроб. Введіть код у форму нижче.",
   "wrong_password": "Неправильний пароль, перевірте дані та спробуйте ще раз",
   "error": {
     "something_went_wrong": "Щось пішло не так",

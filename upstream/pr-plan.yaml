@@ -4,7 +4,7 @@ locale: uk
 source_locale: en
 reference_locale: ru
 review_policy: keep-existing-uk
-excluded_review_keys: 20
+excluded_review_keys: 12
 pull_requests:
   - id: shell-i18n
     repository: https://github.com/Zextras/carbonio-shell-ui-i18n

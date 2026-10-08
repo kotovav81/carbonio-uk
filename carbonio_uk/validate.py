@@ -18,7 +18,10 @@ from .manifest import audit_components, load_manifest
 INTERPOLATION = re.compile(r"\{\{\s*([^{}]+?)\s*\}\}")
 BRACE = re.compile(r"(?<!\{)\{\s*([^{}]+?)\s*\}(?!\})")
 PRINTF = re.compile(r"%\(([^)]+)\)[a-zA-Z]|%([0-9]+\$)?([a-zA-Z])")
-MARKUP = re.compile(r"<(/?)([A-Za-z][A-Za-z0-9:-]*)\b[^>]*>")
+# Only treat known UI markup elements as markup.  Carbonio also uses literal
+# angle-bracket placeholders such as ``<No Name>``; interpreting those as an
+# HTML tag would reject a valid translated placeholder.
+MARKUP = re.compile(r"<(/?)(strong|br|a|span|em|b|i|p|code|ul|ol|li)\b[^>]*>", re.IGNORECASE)
 
 
 def placeholder_signature(value: Any) -> Counter[str]:

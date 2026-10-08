@@ -381,7 +381,7 @@
     "room_request_not_sent": "Ви ще не надіслали запит на ресурси",
     "generic_invitation_not_sent": "Ви ще не надіслали запрошення",
     "repeat_every": "Повторювати кожні",
-    "day_of_month_recurrence": "{{day}}-й день місяця",
+    "day_of_month_recurrence": "{{day}} день місяця",
     "ordinal_weekday_of_month": "Кожного {{ordinal}} {{weekday}} місяця",
     "on": "Увімкнено",
     "end_after_events": "Події",
@@ -798,6 +798,7 @@
     "harare_pretoria": "{{value}} Хараре, Преторія",
     "hawaii": "{{value}} Гаваї",
     "helsinki_kyiv_riga_sofia_tallinn_vilnius": "{{value}} Гельсінкі, Київ, Рига, Софія, Таллінн, Вільнюс",
+    "vladivostok_magadan": "{{value}} Владивосток, Магадан",
     "indiana_east": "{{value}} Індіана (схід)",
     "iraq": "{{value}} Ірак",
     "irkutsk_rtz_7": "{{value}} Іркутськ (RTZ 7)",
@@ -965,7 +966,12 @@
   "rooms_invalid": "Одна або кілька переговорних кімнат недійсні. Спробуйте змінити їх або вказати іншу.",
   "reset_date": "Скинути дату",
   "ordinal": {
-    "suffix": {},
+    "suffix": {
+      "nd": "-й",
+      "rd": "-й",
+      "st": "-й",
+      "th": "-й"
+    },
     "third": "третій",
     "first": "перший",
     "second": "другий",

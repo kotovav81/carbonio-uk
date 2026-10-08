@@ -40,6 +40,7 @@ class CompareTest(unittest.TestCase):
         self.assertNotEqual(placeholder_signature("Hello {{ name }}"), placeholder_signature("Вітаю {{user}}"))
         self.assertEqual(markup_signature("<strong>Hello</strong>"), markup_signature("<strong>Вітаю</strong>"))
         self.assertNotEqual(markup_signature("Hello<br>World"), markup_signature("Вітаю"))
+        self.assertEqual(markup_signature("<No Name>"), markup_signature("<Без імені>"))
 
     def test_validator_normalizes_spacing_but_preserves_names_and_ru_is_reference_only(self):
         with tempfile.TemporaryDirectory() as directory:
