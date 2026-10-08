@@ -1,0 +1,34 @@
+diff --git a/src/constants/default-locales.ts b/src/constants/default-locales.ts
+index cb20164..ec0a1ab 100644
+--- a/src/constants/default-locales.ts
++++ b/src/constants/default-locales.ts
+@@ -67,6 +67,12 @@ export const STATIC_LOCALES: Record<string, LocaleValue> = {
+ 		labelKey: 'locale.label_polish',
+ 		labelDefaultValue: 'Polish - {{value}}'
+ 	},
++	uk: {
++		name: 'Українська',
++		value: 'uk',
++		labelKey: 'locale.label_ukrainian',
++		labelDefaultValue: 'Ukrainian - {{value}}'
++	},
+ 	ro: {
+ 		name: 'română',
+ 		value: 'ro',
+diff --git a/src/constants/locales.ts b/src/constants/locales.ts
+index 2b5ae2a..d262f7c 100644
+--- a/src/constants/locales.ts
++++ b/src/constants/locales.ts
+@@ -75,6 +75,12 @@ export const DATE_FNS_LOCALE: Record<
+ 				({ pl }) => pl
+ 			)
+ 	},
++	uk: {
++		localeImportPath: () =>
++			/* webpackMode: "lazy", webpackChunkName: "uk" */ import('date-fns/locale/uk').then(
++				({ uk }) => uk
++			)
++	},
+ 	ro: {
+ 		localeImportPath: () =>
+ 			/* webpackMode: "lazy", webpackChunkName: "ro" */ import('date-fns/locale/ro').then(

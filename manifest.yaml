@@ -1,0 +1,252 @@
+schema: 1
+locale:
+  primary: "uk"
+  display_name: "Українська"
+  reference: "ru"
+components:
+  shell:
+    repository: "https://github.com/Zextras/carbonio-shell-ui-i18n"
+    branch: "master"
+    commit: "e462a874c5594b4ecad2fe1a74ed84f7c9231858"
+    checked_at: "2026-10-08T06:29:51+00:00"
+    status: "active"
+    baseline_audit: true
+    source_repository: "https://github.com/Zextras/carbonio-shell-ui"
+    translation:
+      type: "json"
+      repository: "https://github.com/Zextras/carbonio-shell-ui-i18n"
+      available: true
+      english: "en.json"
+      russian: "ru.json"
+      ukrainian: "uk.json"
+      locale: "uk"
+  admin_login:
+    repository: "https://github.com/Zextras/carbonio-admin-login-ui-i18n"
+    branch: "master"
+    commit: "9c69667f237fc818f79ce0b4399f4c1b9f0216d7"
+    checked_at: "2026-10-08T06:29:51+00:00"
+    status: "active"
+    baseline_audit: true
+    source_repository: "https://github.com/Zextras/carbonio-admin-login-ui"
+    translation:
+      type: "json"
+      repository: "https://github.com/Zextras/carbonio-admin-login-ui-i18n"
+      available: true
+      english: "en.json"
+      russian: "ru.json"
+      ukrainian: "uk.json"
+      locale: "uk"
+  login:
+    repository: "https://github.com/Zextras/carbonio-login-ui-i18n"
+    branch: "master"
+    commit: "269baf4175bb7cc0b35020fd18d8f3be7f996d89"
+    checked_at: "2026-10-08T06:29:51+00:00"
+    status: "active"
+    baseline_audit: true
+    source_repository: "https://github.com/Zextras/carbonio-login-ui"
+    translation:
+      type: "json"
+      repository: "https://github.com/Zextras/carbonio-login-ui-i18n"
+      available: true
+      english: "en.json"
+      russian: "ru.json"
+      ukrainian: "uk.json"
+      locale: "uk"
+  auth_ui:
+    repository: "https://github.com/Zextras/carbonio-auth-ui-i18n"
+    branch: "master"
+    commit: "e0d140ce40a15440157309edefd1f5d8df5f4ee9"
+    checked_at: "2026-10-08T06:29:51+00:00"
+    status: "active"
+    baseline_audit: true
+    source_repository: "https://github.com/Zextras/carbonio-auth-ui"
+    translation:
+      type: "json"
+      repository: "https://github.com/Zextras/carbonio-auth-ui-i18n"
+      available: true
+      english: "en.json"
+      russian: "ru.json"
+      ukrainian: "uk.json"
+      locale: "uk"
+  auth_properties:
+    repository: "https://github.com/Zextras/carbonio-auth-i18n"
+    branch: "main"
+    commit: "2450d982e2c00e6a645e3888b3dc1875fff73209"
+    checked_at: "2026-10-08T06:29:51+00:00"
+    status: "active"
+    baseline_audit: true
+    source_repository: "https://github.com/Zextras/carbonio-auth-ui"
+    translation:
+      type: "properties"
+      repository: "https://github.com/Zextras/carbonio-auth-i18n"
+      available: true
+      english: "com_zextras_module_auth.properties"
+      russian: "com_zextras_module_auth_ru.properties"
+      ukrainian: "com_zextras_module_auth_uk.properties"
+      locale: "uk"
+  mail:
+    repository: "https://github.com/Zextras/carbonio-mails-ui-i18n"
+    branch: "master"
+    commit: "d82e0c9a52bfc26d7433283529cc940ddc558e47"
+    checked_at: "2026-10-08T06:29:51+00:00"
+    status: "active"
+    baseline_audit: true
+    source_repository: "https://github.com/Zextras/carbonio-mails-ui"
+    translation:
+      type: "json"
+      repository: "https://github.com/Zextras/carbonio-mails-ui-i18n"
+      available: true
+      english: "en.json"
+      russian: "ru.json"
+      ukrainian: "uk.json"
+      locale: "uk"
+  calendar:
+    repository: "https://github.com/Zextras/carbonio-calendars-ui-i18n"
+    branch: "master"
+    commit: "7652733dbe1b76a2bba9f5112908b9c0c31b73c7"
+    checked_at: "2026-10-08T06:29:51+00:00"
+    status: "active"
+    baseline_audit: true
+    source_repository: "https://github.com/Zextras/carbonio-calendars-ui"
+    translation:
+      type: "json"
+      repository: "https://github.com/Zextras/carbonio-calendars-ui-i18n"
+      available: true
+      english: "en.json"
+      russian: "ru.json"
+      ukrainian: "uk.json"
+      locale: "uk"
+  contacts:
+    repository: "https://github.com/Zextras/carbonio-contacts-ui-i18n"
+    branch: "master"
+    commit: "3c003bd31c9853ccde5b65d9bf32ed34e26dc2d1"
+    checked_at: "2026-10-08T06:29:51+00:00"
+    status: "active"
+    baseline_audit: true
+    source_repository: "https://github.com/Zextras/carbonio-contacts-ui"
+    translation:
+      type: "json"
+      repository: "https://github.com/Zextras/carbonio-contacts-ui-i18n"
+      available: true
+      english: "en.json"
+      russian: "ru.json"
+      ukrainian: "uk.json"
+      locale: "uk"
+  files:
+    repository: "https://github.com/Zextras/carbonio-files-ui-i18n"
+    branch: "master"
+    commit: "e9fcd26bd673049f2a166d6addb8d28b08842b33"
+    checked_at: "2026-10-08T06:29:51+00:00"
+    status: "active"
+    baseline_audit: true
+    source_repository: "https://github.com/Zextras/carbonio-files-ui"
+    translation:
+      type: "json"
+      repository: "https://github.com/Zextras/carbonio-files-ui-i18n"
+      available: true
+      english: "en.json"
+      russian: "ru.json"
+      ukrainian: "uk.json"
+      locale: "uk"
+  search:
+    repository: "https://github.com/Zextras/carbonio-search-ui-i18n"
+    branch: "master"
+    commit: "352fd77808482df579ef77a9b31679a5f97e3173"
+    checked_at: "2026-10-08T06:29:51+00:00"
+    status: "active"
+    baseline_audit: true
+    source_repository: "https://github.com/Zextras/carbonio-search-ui"
+    translation:
+      type: "json"
+      repository: "https://github.com/Zextras/carbonio-search-ui-i18n"
+      available: true
+      english: "en.json"
+      russian: "ru.json"
+      ukrainian: "uk.json"
+      locale: "uk"
+  tasks:
+    repository: "https://github.com/Zextras/carbonio-tasks-ui-i18n"
+    branch: "master"
+    commit: "e92fe7c688605199ca865bbc3ce53358ce715db1"
+    checked_at: "2026-10-08T06:29:51+00:00"
+    status: "active"
+    baseline_audit: true
+    source_repository: "https://github.com/Zextras/carbonio-tasks-ui"
+    translation:
+      type: "json"
+      repository: "https://github.com/Zextras/carbonio-tasks-ui-i18n"
+      available: true
+      english: "en.json"
+      russian: "ru.json"
+      ukrainian: "uk.json"
+      locale: "uk"
+  collaboration:
+    repository: "https://github.com/Zextras/carbonio-ws-collaboration-ui-i18n"
+    branch: "main"
+    commit: "be60555a1e87ad4b2a833773e928845facb589b3"
+    checked_at: "2026-10-08T06:29:51+00:00"
+    status: "active"
+    baseline_audit: true
+    source_repository: "https://github.com/Zextras/carbonio-ws-collaboration-ui"
+    translation:
+      type: "json"
+      repository: "https://github.com/Zextras/carbonio-ws-collaboration-ui-i18n"
+      available: true
+      english: "en.json"
+      russian: "ru.json"
+      ukrainian: "uk.json"
+      locale: "uk"
+  storages:
+    repository: "https://github.com/Zextras/carbonio-storages-ui-i18n"
+    branch: "master"
+    commit: "d4adbe234bd32a90852995581b591e7cf699a59b"
+    checked_at: "2026-10-08T06:29:51+00:00"
+    status: "active"
+    baseline_audit: true
+    source_repository: null
+    translation:
+      type: "json"
+      repository: "https://github.com/Zextras/carbonio-storages-ui-i18n"
+      available: true
+      english: "en.json"
+      russian: "ru.json"
+      ukrainian: "uk.json"
+      locale: "uk"
+  admin_console:
+    repository: "https://github.com/Zextras/carbonio-admin-console-ui"
+    branch: "main"
+    commit: "743455c2b3713931abcd05e7f7c3e97ee2b0f17f"
+    checked_at: "2026-10-08T06:29:51+00:00"
+    status: "active/blocked"
+    baseline_audit: false
+    source_repository: "https://github.com/Zextras/carbonio-admin-console-ui"
+    translation:
+      type: "json"
+      repository: "https://github.com/Zextras/carbonio-admin-manage-ui-i18n"
+      available: false
+      english: null
+      russian: null
+      ukrainian: null
+      locale: "uk"
+      blocked_reason: "translation repository unavailable"
+aggregators:
+  carbonio-webui-i18n:
+    repository: "https://github.com/Zextras/carbonio-webui-i18n"
+    branch: "main"
+    commit: "677d46d40c10c483f5ae2391761e6438b1adf6c6"
+    checked_at: "2026-10-08T06:29:51+00:00"
+    status: "aggregator/packaging-only"
+    components:
+      - "shell"
+      - "admin_login"
+      - "login"
+      - "auth_ui"
+      - "auth_properties"
+      - "mail"
+      - "calendar"
+      - "contacts"
+      - "files"
+      - "search"
+      - "tasks"
+      - "collaboration"
+      - "storages"

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "carbonio-uk"
+version = "0.1.0"
+description = "Auditable Ukrainian localization tooling for Carbonio"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["PyYAML>=6"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+ai = ["openai>=1.68"]
+
+[project.scripts]
+carbonio-uk = "carbonio_uk.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["carbonio_uk*"]

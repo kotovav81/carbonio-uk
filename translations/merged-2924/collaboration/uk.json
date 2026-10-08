@@ -1,0 +1,813 @@
+{
+  "action": {
+    "activateNotifications": "Включити сповіщення",
+    "addAttachment": "Додати вкладення",
+    "addMoreAttachments": "Додати {{counter}} вкладень",
+    "addNewMembers": "Додайте нових учасників",
+    "addNewMembersTo": "Додайте нових учасників до {{roomName}}",
+    "addSingleAttachment": "Додати вкладення {{counter}}",
+    "clearHistory": "Очистити історію",
+    "close": "Закрити",
+    "copy": "Копіювати",
+    "create": "Створити",
+    "decline": "Відхилити",
+    "declineAll": "Відхилити все",
+    "delete": "Видалити",
+    "download": "Завантажити",
+    "edit": "Редагувати",
+    "editDetails": "Редагувати деталі",
+    "editRoom": "Редагувати {{roomName}}",
+    "editYourMessage": "Відредагуйте своє повідомлення",
+    "enter": "Ввести",
+    "forward": "Переслати",
+    "forwarded": "переслано",
+    "joinMeeting": "Приєднатися до зустрічі",
+    "leave": "Вийти",
+    "muteNotifications": "Вимкнути сповіщення",
+    "newChat": "Новий чат",
+    "ok": "Гаразд",
+    "preview": "Попередній перегляд",
+    "removeUser": "Прибрати",
+    "reply": "Відповісти",
+    "replyToSomeone": "Відповісти на",
+    "replyToYourself": "Відповісти собі",
+    "scrollToBottom": "Прокрутити вниз",
+    "understood": "Зрозуміло",
+    "undo": "Відмінити",
+    "cancel": "Скасувати",
+    "deleteForAll": "Видалити для всіх",
+    "retry": "Повторити спробу",
+    "newVirtual": "Нова віртуальна кімната",
+    "virtual": {
+      "editRoom": "Редагувати віртуальну кімнату",
+      "deleteRoom": "Видалити віртуальну кімнату",
+      "copyLink": "Копіювати посилання на віртуальну кімнату"
+    },
+    "save": "Зберегти",
+    "showMore": "Показати більше",
+    "hide": "Приховати",
+    "pin": "Закріпити повідомлення",
+    "unpin": "Відкріпити повідомлення",
+    "exportMessages": "Експортувати повідомлення",
+    "copyCode": "Скопіювати код"
+  },
+  "affiliationMessages": {
+    "groupCreated": "Створено кімнату {{roomName}}!",
+    "oneToOneCreated": "Новий чат створено!",
+    "member": {
+      "Removed": "Користувач {{userName}} більше не є учасником {{roomName}}.",
+      "Added": "Користувача {{userName}} додано до {{roomName}}."
+    },
+    "user": {
+      "Removed": "Ви більше не є учасником {{roomName}}.",
+      "Added": "Вас додано до {{roomName}}."
+    }
+  },
+  "attachments": {
+    "addFromLocal": "Додати з локальних файлів",
+    "attachLinkFiles": "Прикріпити публічне посилання з Files",
+    "dragAndDrop": "Режим перетягування",
+    "dropHereDescription": "Перетягніть сюди вкладення, щоб швидко додати їх до цього чату",
+    "errorUploadingFile": "Не вдалося завантажити {{file}}",
+    "stopUpload": "Зупинити завантаження",
+    "uploadAborted": "Завантаження перервано",
+    "integrations": {
+      "chooseFile": "Вибрати файл",
+      "shareLink": "Поділитися публічним посиланням"
+    },
+    "upload": {
+      "tooLarge": "Обране зображення занадто велике. Будь ласка, завантажте файл менший за {{size}} МБ.",
+      "genericError": "Сталася помилка під час завантаження зображення. Будь ласка, спробуйте ще раз."
+    }
+  },
+  "chat": "Чат",
+  "conversation": {
+    "emptyListDescription": "Тут відображатимуться чати та групи",
+    "emptyListTitle": "Цей список порожній",
+    "keepInTouchTitle": "Залишаймося на зв'язку!",
+    "mockCreateChatTitle": "Створіть новий чат за допомогою кнопки створення",
+    "newMessage": "Нове повідомлення",
+    "newMessages": "Нові повідомлення",
+    "selectionMode": {
+      "maxSelected": "Досягнуто максимальної кількості повідомлень для одночасного пересилання. Зніміть вибір з одного повідомлення, щоб змінити вибір.",
+      "multipleForward": "Переслати {{numberOfMessages}} повідомлень",
+      "exit": "Вийти з режиму вибору"
+    },
+    "longCaption": {
+      "modal": {
+        "title": "Текст надто довгий для підпису",
+        "action": "Усе одно прикріпити",
+        "description": "Цей текст надто довгий для підпису до вкладення.",
+        "additionalDetails": "Якщо продовжити, зайвий текст буде вилучено з оригіналу. Продовжити?"
+      }
+    },
+    "displayer": {
+      "title": "Виберіть чат, щоб почати надсилати повідомлення",
+      "description": "Взаємодійте, спілкуйтеся та співпрацюйте з колегами, обмінюючись інформацією та вкладеннями."
+    },
+    "emptyList": {
+      "displayer": {
+        "description": "Під час створення чату можна вибрати кількох людей і створити групу.",
+        "title": "Створіть новий чат за допомогою кнопки створення"
+      },
+      "list": {
+        "title": "Тут поки нічого немає",
+        "description": "Тут відображатимуться чати та групи."
+      }
+    }
+  },
+  "conversationFilter": {
+    "closeTooltip": "Закрити фільтр",
+    "filterTooltip": "Фільтрувати список",
+    "label": "Введіть текст для фільтрування списку"
+  },
+  "conversationInfo": {
+    "actionAccordionTitle": "Дії",
+    "email": "Електронна пошта",
+    "info": "Інформація",
+    "messages": "Повідомлення",
+    "name": "Ім’я",
+    "status": "Стан",
+    "title": "Назва",
+    "topic": "Тема",
+    "search": "Пошук",
+    "membersTab": "Учасники",
+    "mediaGalleryTab": "Медіагалерея"
+  },
+  "date": {
+    "today": "Сьогодні",
+    "yesterday": "Учора"
+  },
+  "editModal": {
+    "confirm": "Редагувати деталі",
+    "confirmDisabled": "Ви нічого не змінили",
+    "errorDisabled": "Перевірте введену інформацію",
+    "groupDescriptionDetails": "Описує тематику групи",
+    "groupNameDetails": "Обов'язкове поле, яке ідентифікує групу",
+    "nameTooLong": "Максимальна довжина назви — 128 символів",
+    "nameTooShort": "Назва є обов'язковою інформацією",
+    "topicTooLong": "Максимальна довжина теми — 256 символів"
+  },
+  "external": {
+    "nobodyInTheRoom": "Схоже, у цій кімнаті нікого немає",
+    "roomIsEmpty": "Ця кімната порожня"
+  },
+  "feedback": {
+    "historyCleared": "Історію успішно очищено!",
+    "messageCopied": "Повідомлення скопійовано",
+    "networkProblem": {
+      "websocket": "Помилка підключення до WEBSOCKET",
+      "wsc": "Помилка підключення до WSC",
+      "xmpp": "Помилка підключення до XMPP"
+    },
+    "networkProblems": "Під час використання цього модуля можуть виникати проблеми. Спробуйте оновити сторінку.",
+    "notificationsActivatedForThisChat": "Сповіщення для цього чату ввімкнено",
+    "notificationsMutedForThisChat": "Сповіщення для цього чату вимкнено",
+    "connectionReestabilished": "З'єднання відновлено, зустріч може тривати без перерви.",
+    "attachmentDeleted": "Вкладення видалено",
+    "attachmentDeleteError": "Не вдалося видалити вкладення",
+    "codeCopied": "Скопійовано!",
+    "attachmentsDeleted": "Вкладення видалено",
+    "attachmentsDeleteError": "Не вдалося видалити деякі вкладення"
+  },
+  "keepInTouchWithColleagues": "Спілкуйтеся з колегами або приєднуйтеся до зустрічей своїх груп",
+  "meeting": {
+    "activeMeetingTooltip": "У цьому чаті триває зустріч",
+    "collapseChat": "Згорнути чат",
+    "collapseParticipantsMeetingTooltip": "Згорнути список учасників",
+    "continueActiveSession": "Продовжити зустріч у новому вікні",
+    "expandChat": "Розгорнути чат",
+    "expandParticipantsListTooltip": "Розгорнути список учасників",
+    "extendChat": "Розширити чат",
+    "interactions": {
+      "cameraDisabled": "Камеру вимкнено",
+      "cameraEnabled": "Камеру ввімкнено",
+      "cinemaView": "Режим кінотеатру",
+      "disableCamera": "Вимкнути камеру",
+      "disableFullScreen": "Вийти з повноекранного режиму",
+      "disableMicrophone": "Вимкнути мікрофон",
+      "disableScreen": "Вимкнути демонстрацію екрана",
+      "enableCamera": "Увімкнути камеру",
+      "enableFullScreen": "Увімкнути повноекранний режим",
+      "enableMicrophone": "Увімкнути мікрофон",
+      "enableScreen": "Увімкнути демонстрацію екрана",
+      "gridView": "Режим сітки",
+      "leaveMeeting": "Залишити зустріч",
+      "microphoneDisabled": "Мікрофон вимкнено",
+      "microphoneEnabled": "Мікрофон увімкнено",
+      "playMic": "Почати перевірку мікрофона",
+      "stopMic": "Зупинити перевірку мікрофона",
+      "leaveConfirmation": "Залишити зустріч?",
+      "title": {
+        "devices": "Пристрої",
+        "videoEffect": "Відеоефект"
+      },
+      "option": {
+        "removeBlur": "Прибрати розмиття",
+        "applyBlur": "Застосувати розмиття"
+      },
+      "selectedDeviceTooltip": "Вибраний пристрій",
+      "userHint": "Увімкніть камеру, щоб вибрати відеоефект",
+      "disabled": "Виникли проблеми зі з'єднанням. Спробуйте пізніше.",
+      "unknownDevice": "Невідомий пристрій",
+      "handDown": "Опустити руку",
+      "handUp": "Підняти руку",
+      "browserPermission": "Надайте браузеру дозволи для активації ресурсів"
+    },
+    "joinMeeting": "Приєднатися до зустрічі",
+    "joinMeetingDescription": "Як ви хочете приєднатися до цієї зустрічі?",
+    "minimizeChat": "Згорнути чат",
+    "newMeetingNotification": {
+      "sendAQuickMessage": "Надіслати швидке повідомлення",
+      "sendMessage": "Надіслати повідомлення",
+      "userIsInvitingYou": "<strong>{{name}}</strong> запрошує вас",
+      "writeAMessageToSendIt": "Напишіть повідомлення, щоб надіслати його"
+    },
+    "noMoreActiveSession": "Не може бути більше одного активного сеансу тієї самої зустрічі",
+    "noTwoActiveSession": "Два активні сеанси тієї самої зустрічі не можуть існувати одночасно",
+    "ongoingGroupMeetingTooltip": "Ви вже берете участь у цій зустрічі",
+    "ongoingOneToOneMeetingTooltip": "У вас уже є активна зустріч із {{name}}",
+    "openedInAnotherWindow": "Цю зустріч уже відкрито в іншому вікні",
+    "participantsList": {
+      "title_one": "1 учасник",
+      "title_other": "{{count}} учасників"
+    },
+    "presentActiveSession": "Є інший активний сеанс",
+    "rejoinMeeting": "Повторно приєднатися до зустрічі",
+    "restartMeeting": "Перезапустити зустріч",
+    "setInputDescription": "Виберіть пристрої введення у спадному меню",
+    "startMeeting": "Почати зустріч",
+    "startModal": {
+      "audioAndVideoLoading": "Завантаження ресурсів",
+      "enterOneToOneMeetingTitle": "Приєднатися до зустрічі {{meetingTitle}}",
+      "enterRoomMeetingTitle": "Взяти участь у зустрічі {{meetingTitle}}"
+    },
+    "tooltip": {
+      "activeSessionTooltip": "У вас є активний сеанс цієї зустрічі"
+    },
+    "waitingParticipants": "Очікування приєднання учасників…",
+    "virtual": {
+      "creationInput": "Назва віртуальної кімнати",
+      "buttonLabel": "Ваші віртуальні кімнати",
+      "emptyState": "Тут відображатимуться створені вами віртуальні кімнати.",
+      "deleteTooltip": "Видалити віртуальну кімнату",
+      "nameRequiredTooltip": "Назва віртуальної кімнати обов'язкова",
+      "createTooltip": "Створити нову віртуальну кімнату",
+      "invalidNameTooltip": "Недійсна назва",
+      "deleteModalDescription": "Ви видаляєте цю віртуальну кімнату. Якщо в ній тривають зустрічі, їх буде зупинено й доступ до кімнати буде закрито для всіх. Продовжити?",
+      "copyLinkSnackbar": "Посилання на віртуальну кімнату скопійовано",
+      "deleteSnackbar": "Віртуальну кімнату успішно видалено",
+      "deleteModalTitle": "Видалити віртуальну кімнату {{roomName}}",
+      "participants": {
+        "onlyUser": "Ви єдиний активний учасник.",
+        "singleActive": "Один активний учасник.",
+        "userWithOthers": "Ви та ще {{numberOfParticipants}} активних учасників.",
+        "multipleActive": "{{numberOfParticipants}} активних учасників.",
+        "widget": "Активні учасники:"
+      },
+      "startPrompt": "Почати зустріч у цій віртуальній кімнаті.",
+      "moderators": {
+        "onlyUser": "Ви єдиний модератор.",
+        "multipleAdditional": "та ще <strong>{{numberOfModerators}} модераторів</strong>.",
+        "onlyModerator": "є єдиним модератором.",
+        "singleAdditional": "та ще один модератор.",
+        "widget": "Модератори віртуальної кімнати:"
+      },
+      "modal": {
+        "description": "Дайте цій віртуальній кімнаті впізнавану назву, щоб учасники розуміли тему зустрічі.",
+        "invalidNameCaption": "Введіть коротшу назву.",
+        "moderator": {
+          "input": "Модератори віртуальної кімнати",
+          "description": "Ви модеруватимете цю віртуальну кімнату. Додаткового модератора буде додано як співавтора з такими самими правами."
+        },
+        "edit": {
+          "tile": "Редагувати віртуальну кімнату «{{roomName}}»",
+          "title": "Змінити Віртуальну Кімнату \"{{roomName}}\""
+        }
+      },
+      "newRoom": "Створити нову віртуальну кімнату"
+    },
+    "sidebar": {
+      "waitingList": "Список очікування",
+      "waitingCaption": "Очікує на допуск",
+      "tooltip": {
+        "waitingAccept": "Допустити користувача",
+        "waitingReject": "Відхилити користувача",
+        "lowerUserHand": "Опустити руку {{memberName}}"
+      },
+      "recording": {
+        "title": "Запис",
+        "moderatorInfo": "розпочав запис",
+        "action": {
+          "start": "ПОЧАТИ ЗАПИС",
+          "stop": "ЗУПИНИТИ ЗАПИС"
+        },
+        "description": "Запис буде збережено у Files модератора, який його розпочав.",
+        "additionalDescription": "Якщо виникне помилка, запис буде збережено у Files модератора, який його розпочав."
+      },
+      "lowerAllHands": "Опустити усі підняті руки",
+      "raiseHand": "{{numberOfHandRaised}} піднятих рук"
+    },
+    "snackbar": {
+      "waitingInfo": "Схоже, хтось очікує в кімнаті очікування {{roomName}}.",
+      "autoHandDown": "Здається, ви щось кажете, тому ваша рука буде опущена.",
+      "someoneRaisedHand": "Хтось підняв руку",
+      "handLoweredByModerator": "Модератор опустив вашу руку"
+    },
+    "browserNotification": {
+      "waitingMessage": "Новий користувач очікує на допуск до зустрічі"
+    },
+    "waitingRoom": {
+      "title": "Як ви хочете приєднатися до зустрічі {{meetingName}}?",
+      "setInputs": "Виберіть пристрої введення у спадному меню",
+      "welcomeHint": "Натисніть «ГОТОВИЙ ДО УЧАСТІ», щоб приєднатися до зустрічі",
+      "readyHint": "Ви приєднаєтеся до зустрічі за кілька митей",
+      "hangUp": "Вийти",
+      "ready": "Готовий до участі",
+      "welcomeCaption": "Коли будете готові, влаштовуйтеся зручніше.",
+      "nextStep": "Модератор допустить вас до зустрічі за першої можливості.",
+      "readyCaption": "Усе налаштовано! Влаштовуйтеся зручніше.",
+      "userIsReady": "Ви готові!"
+    },
+    "infoPage": {
+      "title": {
+        "hangUp": "Ви залишили кімнату очікування!",
+        "rejected": "Вам відмовлено в доступі",
+        "meetingNotFound": "Зустрічі, яку ви шукаєте, не існує",
+        "notAuthenticatedUser": "Ви не автентифіковані",
+        "invalidWaiting": "На зустрічі немає модераторів",
+        "generalError": "Ой! Ви залишили зустріч.",
+        "meetingDeclined": "Виклик відхилено"
+      },
+      "slogan": {
+        "hangUp": "Можливо, наступного разу",
+        "rejected": "Можливо, наступного разу",
+        "meetingNotFound": "Спробуйте пізніше",
+        "notAuthenticatedUser": "УВІЙДІТЬ, ЩОБ ПРИЄДНАТИСЯ ДО ЗУСТРІЧІ",
+        "invalidWaiting": "Повторіть спробу пізніше",
+        "generalError": "СПРОБУЙТЕ ПРИЄДНАТИСЯ ЩЕ РАЗ",
+        "meetingDeclined": "Виклик завершено"
+      },
+      "description": {
+        "hangUp": "Будемо раді бачити вас на майбутніх зустрічах",
+        "rejected": "Модератори вирішили відмовити вам у доступі до зустрічі",
+        "meetingNotFound": "Перевірте посилання на зустріч і повторіть спробу",
+        "notAuthenticatedUser": "Ви не можете приєднатися до зустрічі без автентифікації у своєму обліковому записі",
+        "invalidWaiting": "Для приєднання до зустрічі потрібне схвалення модератора.",
+        "generalError": "Щось пішло не так.",
+        "meetingDeclined": "{{userName}} відхилив виклик"
+      },
+      "feedback": {
+        "caption": "Це допомагає нам ставати кращими :)",
+        "description": "Ваша думка важлива для нас!",
+        "title": "Повідомте нас про свої враження від зустрічі.",
+        "thankYou": "ДЯКУЄМО ЗА ВАШ ВІДГУК!"
+      }
+    },
+    "recordingHint": "Ця зустріч записується",
+    "recordingStart": {
+      "successSnackbar": {
+        "participants": "{{userName}} розпочав запис цієї зустрічі",
+        "starter": "Ви розпочали запис цієї зустрічі"
+      },
+      "failureSnackbar": "Не вдалося розпочати запис. Зверніться до системного адміністратора."
+    },
+    "recordingModal": {
+      "title": "Зупинити запис",
+      "description": "Ви збираєтеся зупинити запис. Новий запис можна розпочати будь-коли.",
+      "caption": "Запис буде збережено в папці {{folderName}} у Files. Щоб змінити папку призначення, перейдіть до Налаштування > Чати > Запис.",
+      "confirmationAction": "ЗУПИНИТИ"
+    },
+    "recordingStop": {
+      "successSnackbar": {
+        "stopper": "Запис з'явиться в папці {{folderName}}, щойно стане доступним",
+        "participants": "{{userName}} зупинив запис цієї зустрічі",
+        "general": "Запис успішно зупинено"
+      },
+      "failureSnackbar": "Не вдалося зупинити запис. Зверніться до системного адміністратора."
+    },
+    "durationTooltip": "Тривалість зустрічі",
+    "visualEffects": {
+      "title": "Візуальні ефекти",
+      "default": "Немає",
+      "blur": "Розмиття"
+    },
+    "pip": {
+      "noTalking": "Зараз ніхто не говорить.",
+      "speaking": "Говорить {{userName}}.",
+      "close": "Вимкнути PiP",
+      "trigger": "Увімкнути PiP"
+    },
+    "micTest": {
+      "microphoneWorking": "Мікрофон працює належним чином",
+      "noSoundDetected": "Звук не виявлено. Говоріть під час запису або перевірте мікрофон",
+      "turnOnMicrophone": "Увімкніть мікрофон, щоб перевірити його",
+      "startMicTestAgain": "Повторити перевірку мікрофона",
+      "startMicTest": "Почати перевірку мікрофона",
+      "recordingYourVoice": "Запис вашого голосу",
+      "playingBack": "Відтворення..."
+    }
+  },
+  "meetings": {
+    "interactions": {
+      "yourCamIsDisabled": "Вашу камеру вимкнено",
+      "yourMicIsDisabled": "Ваш мікрофон вимкнено"
+    }
+  },
+  "message": {
+    "deletedMessage": "Видалене повідомлення",
+    "draft": "чернетка",
+    "edited": "відредаговано",
+    "forwardedMultipleTimes": "Переслано багато разів",
+    "originallySentBy": "<strong>Спочатку надіслав(-ла):</strong> {{forwardUsername}} ({{messageDate}} - {{messageTime}})"
+  },
+  "modal": {
+    "clearHistoryDescription": "Ви очищуєте історію чату. Зверніть увагу: цю дію не можна скасувати. Історію буде видалено лише для вас, а не для інших учасників.",
+    "creation": {
+      "addUserLimit": {
+        "limitReached": "Вибрано максимальну кількість учасників групи",
+        "users_one": "Можна додати ще одного учасника",
+        "users_other": "Можна додати ще {{count}} учасників"
+      },
+      "contactList": "Виберіть більше однієї адреси, щоб створити групу",
+      "description": "Чати — це особисті розмови, які допомагають підтримувати зв'язок із контактами. Ви можете створити групу, додавши більше двох адрес.",
+      "inputPlaceholder": "Почніть вводити або виберіть адресу",
+      "newChat": "Новий чат",
+      "newGroup": "Нова група"
+    },
+    "deleteGroup": "Видалити групу",
+    "deleteGroupLabel": "Ця дія вплине на всіх учасників групи, і її неможливо скасувати. Справді видалити групу?",
+    "deleteGroupMeetingOngoingLabel": "Зараз триває зустріч. Видалення групи завершить її без попередження.",
+    "deleteMessageTitle": "Видалити вибране повідомлення?",
+    "deleteMessageTitleDescription": "Ви видаляєте повідомлення. Воно більше не буде доступне",
+    "deleteRoom": "Видалити кімнату",
+    "deleteRoomLabel": "Справді видалити цю кімнату?",
+    "deleteUserDescription": "Справді вилучити цього учасника?",
+    "forward": {
+      "chooseAtLeastOneChat": "Виберіть принаймні один чат",
+      "description": "Виберіть чат призначення для пересилання повідомлення",
+      "inputPlaceholder": "Почніть вводити або виберіть чат",
+      "title": "Переслати повідомлення з {{chatName}}"
+    },
+    "leaveAndDelete": "Вийти та видалити групу",
+    "leaveGroup": "Залишити групу",
+    "leaveGroupLabel": "Справді залишити цю групу?",
+    "leaveRoom": "Залишити кімнату",
+    "leaveRoomLabel": "Справді залишити цю кімнату?",
+    "removeMember": "Видалити учасника",
+    "showPreviousConversationHistory": "Показати історію попередніх розмов",
+    "muteForAllDescription": "Якщо вимкнути користувачеві мікрофон, інші учасники більше його не чутимуть. Лише сам користувач зможе знову ввімкнути мікрофон. Продовжити?",
+    "replacePinMessage": "Замінити закріплене повідомлення",
+    "replacePinConfirm": "Так, замінити закріплене повідомлення",
+    "replacePinCancel": "Ні, скасувати",
+    "replacePinDescription": "У цій розмові вже є закріплене повідомлення. Одночасно можна закріпити лише одне повідомлення. Замінити його цим?",
+    "clearHistoryTitle": "Очистити історію",
+    "clearHistoryForAllDescription": "Це назавжди видалить усі повідомлення та спільні файли в цій кімнаті для всіх учасників.",
+    "clearHistoryWarning": "Цю дію неможливо скасувати.",
+    "clearHistoryCancel": "Ні, скасувати",
+    "clearHistoryConfirm": "Так, очистити історію"
+  },
+  "notification": {
+    "meeting": {
+      "ended": "Зустріч завершено"
+    }
+  },
+  "participantsList": {
+    "closeSearch": "Закрити пошук",
+    "moreMembersAccordionTitle": "учасники",
+    "noMatch": {
+      "all": "За цим запитом не знайдено користувачів ані у ваших чатах, ані у вашій компанії.",
+      "chatList": "За цим запитом не знайдено користувачів у ваших чатах.",
+      "general": "Пошук не дав результатів. Спробуйте інше ключове слово.",
+      "gal": "У вашій компанії не знайдено жодного елемента, який відповідав би цьому пошуку."
+    },
+    "oneMemberAccordionTitle": "Один учасник",
+    "searchMembers": "Пошук учасників",
+    "searchParticipants": "Пошук учасників зустрічі",
+    "creationList": {
+      "title": "Створити новий чат із:",
+      "searchFailure": "Схоже, виникла проблема з пошуком. Повторіть спробу.",
+      "loadMore": "Показати більше користувачів"
+    }
+  },
+  "settings": {
+    "notifications": {
+      "description": "Налаштуйте сповіщення чатів.",
+      "title": "Сповіщення",
+      "subtitle": {
+        "general": "Загальні",
+        "waitingRoom": "Сповіщення про доступ до кімнати очікування"
+      },
+      "toggleSounds": {
+        "desktop": "Увімкнути звуки сповіщень на робочому столі",
+        "waitingRoom": "Увімкнути звуки сповіщень"
+      },
+      "checkbox": {
+        "waitingRoom": "Дозволити сповіщення",
+        "desktop": "Дозволити сповіщення на робочому столі"
+      }
+    },
+    "profile": {
+      "deletedUserImageCorrectly": "Початковий аватар успішно відновлено",
+      "description": "Виберіть аватар, який бачитимуть інші користувачі. Зображення буде автоматично відцентровано.",
+      "errorGenericResponse": "Сталася помилка. Повторіть спробу",
+      "maximumDimension": "Максимальний розмір: {{size}} КБ",
+      "pictureSizeTooLarge": "Сталася помилка. Пам'ятайте, що максимальний розмір зображення аватара — {{size}} КБ",
+      "statusLabel": "Тут відображатиметься ваш статус",
+      "title": "Профіль",
+      "updatedPictureCorrectly": "Новий аватар успішно завантажено"
+    },
+    "room": {
+      "deletedImageCorrectly": "Початковий аватар групи успішно відновлено",
+      "deletedUserImageCorrectly": "Початковий аватар успішно відновлено",
+      "pictureSizeTooLarge": "Сталася помилка. Пам'ятайте, що максимальний розмір зображення аватара групи — {{size}} МБ",
+      "updatedPictureCorrectly": "Новий аватар успішно завантажено"
+    },
+    "save": "Зміни збережено",
+    "title": "Налаштування чатів",
+    "meetings": {
+      "title": "Зустрічі",
+      "description": "Налаштуйте звук і відео для участі в зустрічах. Перед кожною зустріччю ви зможете змінити ці параметри."
+    },
+    "recording": {
+      "title": "Запис",
+      "description": "Виберіть власну папку для збереження записів зустрічей, які ви розпочинаєте.",
+      "inputLabel": "Папка призначення",
+      "browseAction": "ОГЛЯД",
+      "resetAction": "СКИНУТИ",
+      "dialog": {
+        "title": "Виберіть папку"
+      },
+      "homeFolder": "Головна"
+    },
+    "export": {
+      "caption": "Експорт чатів із великим обсягом вмісту може тривати певний час.",
+      "subHead": "Виберіть чат, щоб експортувати повідомлення в текстовий файл. Пам'ятайте, що ви відповідаєте за використання експортованих даних.",
+      "title": "Експорт чату",
+      "description": "Під час експорту ви можете користуватися Carbonio. Однак якщо оновити сторінку, експорт буде перервано.",
+      "snackbar": {
+        "success": "Чат успішно експортовано. Перевірте завантажені файли!"
+      },
+      "filterInput": "Фільтрувати список",
+      "emptySpace": {
+        "noMatch": {
+          "title": "Спробуйте інший запит.",
+          "description": "У ваших чатах немає збігів із цим пошуковим запитом."
+        },
+        "firstAccess": {
+          "description": "Тут відображатимуться ваші особисті чати та групи.",
+          "title": "Тут поки нічого немає.",
+          "callToAction": "Перейдіть до чатів і почніть співпрацювати!"
+        }
+      },
+      "action": "ЕКСПОРТУВАТИ ВИБРАНИЙ ЧАТ",
+      "tooltip": {
+        "noOneSelected": "Виберіть чат для експорту",
+        "ongoingExport": "Ви вже експортуєте чат. Дочекайтеся завершення експорту."
+      }
+    }
+  },
+  "snackbar": {
+    "mutedByModerator": "Модератор вимкнув вам мікрофон. Увімкніть його, щоб говорити"
+  },
+  "status": {
+    "areTyping": "друкують…",
+    "goToPrivateChat": "Перейдіть до особистого чату, щоб надіслати приватне повідомлення",
+    "isTyping": "друкує…",
+    "lastSeen": "Остання активність: {{lastSeen}}",
+    "offline": "Відсутній",
+    "online": "Онлайн",
+    "you": "Ви",
+    "nameAndNumberOfPeopleAreTyping": "{{userName}} і ще {{numberOfUsers}} користувачів друкують…",
+    "numberOfPeopleAreTyping": "{{numberOfUsers}} користувачів друкують…",
+    "Anonymous": "Анонімний користувач",
+    "unknownUser": "Невідомий користувач"
+  },
+  "thanksForParticipating": "Дякуємо за участь",
+  "titlePlaceholder": "Назва вашої групи",
+  "tooltip": {
+    "bottomOfList": "Кінець списку",
+    "clear": "Очистити",
+    "close": "Закрити",
+    "collapseCarousel": "Згорнути",
+    "collapseSidebar": "Згорнути бічну панель",
+    "demoteModerator": "Розжалувати модератора",
+    "disableModalButton": "Виберіть принаймні одну адресу",
+    "expandCarousel": "Розгорнути",
+    "expandSidebar": "Розгорнути бічну панель",
+    "forwardedMessage": "Повідомлення переслано з іншого чату",
+    "goToPrivateChat": "Перейти до приватного чату",
+    "iAmModerator": "Ви модератор",
+    "leaveAndDelete": "Вийти та видалити чат",
+    "leaveConversation": "Залишити групу",
+    "memberIsModerator": "Цей учасник — модератор",
+    "messageActions": "Дії з повідомленнями",
+    "messageComposer": "Поле введення повідомлення",
+    "messageRead": "Прочитано",
+    "messageReceived": "Отримано",
+    "messageSent": "Надіслані",
+    "muteForAll": "Вимкнути мікрофон для всіх",
+    "participantMuted": "Мікрофон цього учасника вимкнено",
+    "pending": "Очікується",
+    "pinVideo": "Закріпити відео",
+    "promoteModerator": "Підвищити до модератора",
+    "promoteSomeoneElseToModerator": "Перш ніж вийти, призначте іншого користувача модератором",
+    "removeToAddNewOne": "Вилучіть когось, щоб додати нових учасників",
+    "room": {
+      "resetPicture": "Скинути зображення",
+      "updatePicture": "Оновити зображення",
+      "uploadPicture": "Завантажити зображення"
+    },
+    "scrollDown": "Прокрутити вниз",
+    "scrollUp": "Прокрутити вгору",
+    "selectEmoji": "Вибрати емодзі",
+    "sendMessage": "Надіслати повідомлення",
+    "showConversationList": "Показати список чатів",
+    "topOfList": "Початок списку",
+    "unpinVideo": "Відкріпити відео",
+    "uploadAttachment": "Завантажити вкладення",
+    "uploading": "Завантаження",
+    "userAvatar": {
+      "resetAvatar": "Скинути аватар",
+      "updateAvatar": "Оновити аватар",
+      "uploadAvatar": "Завантажити аватар"
+    },
+    "writeToSend": "Напишіть повідомлення, щоб надіслати його",
+    "youAreAlreadyMuted": "Ваш мікрофон вимкнено",
+    "reactions": "Реакції",
+    "moreReactions": "Більше реакцій",
+    "virtualActions": "Дії з віртуальною кімнатою",
+    "moreActions": "Додаткові дії",
+    "pinnedMessage": "Закріплене повідомлення",
+    "unpinMessage": "Відкріпити повідомлення"
+  },
+  "tryLater": "Спробуйте пізніше",
+  "interactions": {
+    "micDevice": "Мікрофон",
+    "camDevice": "Камера"
+  },
+  "welcomePage": {
+    "description": "Введіть своє ім'я, щоб приєднатися до зустрічі",
+    "journeyDescription": "Вас буде перенаправлено до кімнати очікування, де модератор схвалить ваш доступ.",
+    "loginButton": "ПЕРЕЙТИ НА СТОРІНКУ ВХОДУ",
+    "title": "Вітаємо у віртуальній кімнаті «{{title}}»",
+    "joinAsGuest": "Приєднатися як гість",
+    "inputPlaceholder": "Введіть своє ім'я",
+    "alreadyHaveAccount": "Уже маєте обліковий запис? Увійдіть за своїми обліковими даними.",
+    "waitingForModerator": "Модератор допустить вас до зустрічі за кілька митей."
+  },
+  "configurationMessages": {
+    "member": {
+      "roomPictureDeleted": "{{name}} відновив стандартне зображення кімнати {{roomName}}.",
+      "roomNameChanged": "{{name}} змінив назву цієї групи на «<i>{{roomName}}</i>».",
+      "roomPictureUpdated": "{{name}} змінив зображення кімнати {{roomName}}.",
+      "roomTopicChanged": "{{name}} змінив тему кімнати {{roomName}} на «<i>{{topicName}}</i>».",
+      "roomTopicRemoved": "{{name}} видалив тему кімнати {{roomName}}.",
+      "pinMessage": "{{actionMakerUsername}} закріпив повідомлення",
+      "unpinMessage": "{{actionMakerUsername}} відкріпив повідомлення",
+      "meetingStarted": "{{name}} зателефонував вам о {{time}}",
+      "meetingDeclined": "{{name}} відхилив виклик о {{time}}"
+    },
+    "user": {
+      "roomNameChanged": "Ви змінили назву цієї групи на «<i>{{roomName}}</i>».",
+      "roomPictureDeleted": "Ви відновили стандартне зображення кімнати {{roomName}}.",
+      "roomPictureUpdated": "Ви змінили зображення кімнати {{roomName}}.",
+      "roomTopicChanged": "Ви змінили тему кімнати {{roomName}} на «<i>{{topicName}}</i>».",
+      "roomTopicRemoved": "Ви видалили тему кімнати {{roomName}}.",
+      "pinMessage": "Ви закріпили повідомлення",
+      "unpinMessage": "Ви відкріпили повідомлення",
+      "clearHistory": "Ви очистили історію чату",
+      "meetingStarted": "Ви зателефонували о {{time}}",
+      "meetingDeclined": "Ви відхилили виклик о {{time}}"
+    },
+    "moderator": {
+      "clearHistory": "{{actionMakerUsername}} очистив історію чату."
+    },
+    "meetingEnded": "Виклик завершено о {{time}}"
+  },
+  "appointment": {
+    "input": {
+      "defaultValue": "Віртуальну кімнату не вибрано.",
+      "limitedOption": "обмежений доступ",
+      "label": "Віртуальна Кімната"
+    },
+    "placeholder": {
+      "title": "Перейдіть до чатів і створіть віртуальну кімнату для проведення зустрічі.",
+      "description": "Коли ви повернетеся, ваші віртуальні кімнати будуть тут."
+    },
+    "virtual": {
+      "managementHint": "Ви можете редагувати або видаляти свої Віртуальні кімнати у модулі Чат."
+    }
+  },
+  "readOnly": {
+    "toBeMigrate": {
+      "title": "Створити копію в новому модулі чатів",
+      "callToAction": "КОПІЮВАТИ ГРУПУ",
+      "description": "Ця дія створить копію групи разом із назвою, учасниками та роллю модератора."
+    },
+    "modal": {
+      "caption": "Після завершення копіювання вас автоматично перенаправить до нового модуля.",
+      "title": "Створити копію групи «{{roomName}}»",
+      "subtitle": "Ви збираєтеся створити копію групи в новому модулі чатів.",
+      "warning": "Важливо: ви копіюєте групу разом із назвою, учасниками та роллю модератора. Ця дія <strong>не створює</strong> копію <strong>історії розмови.</strong>",
+      "callToAction": "ПРОДОВЖИТИ"
+    },
+    "alreadyMigrate": {
+      "title": "Цю групу вже скопійовано",
+      "description": "Натисніть кнопку, щоб перейти до нового модуля й скористатися копією цієї групи.",
+      "callToAction": "ПЕРЕГЛЯНУТИ В НОВОМУ МОДУЛІ ЧАТІВ"
+    },
+    "feedback": {
+      "error": "Сталася помилка. Повторіть спробу або перезавантажте сторінку."
+    },
+    "room": {
+      "toBeMigrate": {
+        "description": "Ця дія перетворить елемент на групу, скопіювавши назву, тему, учасників і роль модератора.",
+        "title": "Перетворити на групу в новому модулі",
+        "callToAction": "ПЕРЕТВОРИТИ НА ГРУПУ",
+        "tooltip": "Крім вас, має бути щонайменше два учасники.",
+        "moreMembersNeeded": "Щоб перетворити цей елемент на групу, крім вас, у ньому має бути щонайменше два учасники."
+      },
+      "modal": {
+        "warning": "Важливо: ви створюєте нову групу з тією самою назвою, темою, учасниками та роллю модератора, що й вихідний елемент. Однак ця дія <strong>не створює</strong> копію <strong>історії розмови.</strong>",
+        "subtitle": "Ви збираєтеся перетворити цей елемент на групу в новому модулі чатів.",
+        "title": "Перетворити «{{roomName}}» на групу.",
+        "caption": "Після завершення перетворення вас автоматично перенаправить до нового модуля."
+      },
+      "alreadyMigrate": {
+        "description": "Натисніть кнопку, щоб перейти до нового модуля й скористатися копією цього елемента.",
+        "title": "Цей елемент уже перетворено"
+      }
+    }
+  },
+  "readBy": {
+    "title": "Переглянули:"
+  },
+  "browserNotification": {
+    "reaction": {
+      "group": "Користувач {{userName}} відреагував на ваше повідомлення:",
+      "chat": "Відреагував на ваше повідомлення:"
+    }
+  },
+  "searchPanel": {
+    "keepSearching": "Продовжуйте пошук!",
+    "singlePlaceholder": "Шукати повідомлення з {{personName}}",
+    "clearTooltip": "Очистити пошук",
+    "inputPlaceholder": "Пошук повідомлень",
+    "noResults": "Схоже, результатів немає.",
+    "groupPlaceholder": "Шукати повідомлення в {{roomName}}",
+    "searching": "Пошук...",
+    "errorSnackbar": "Помилка пошуку. Повторіть спробу."
+  },
+  "label": {
+    "app_name": "Чати"
+  },
+  "mediaGallery": {
+    "filter": {
+      "all": "Усі вкладення",
+      "mine": "Мої вкладення",
+      "sentBy": "Надіслав(-ла):",
+      "sentByAll": "Усі",
+      "sentByYou": "Ви",
+      "tooltip": "Фільтрувати галерею"
+    },
+    "deleteAttachmentTitle": "Видалити вкладення",
+    "deleteAttachmentDescription": "Видалити це вкладення? Файл буде остаточно видалено. Підпис вихідного повідомлення, якщо він є, також буде видалено з історії розмови.",
+    "deleteAttachmentWarning": "Цю дію неможливо скасувати.",
+    "deleteAttachmentConfirm": "Так, видалити вкладення",
+    "deleteAttachmentCancel": "Ні, скасувати",
+    "emptyState": {
+      "title": "У цьому списку немає вкладень",
+      "description": "Тут відображатимуться фотографії, відео та файли, якими поділилися",
+      "titleImages": "У цьому списку немає зображень",
+      "titleVideos": "У цьому списку немає відео",
+      "titleDocuments": "У цьому списку немає документів"
+    },
+    "tabs": {
+      "images": "Зображення",
+      "videos": "Відео",
+      "docs": "Документи"
+    },
+    "count": {
+      "images_one": "{{count}} зображення",
+      "images_other": "{{count}} зображень",
+      "videos_one": "{{count}} відео",
+      "videos_other": "{{count}} відео",
+      "documents_one": "{{count}} документ",
+      "documents_other": "{{count}} документів"
+    },
+    "selection": {
+      "count": "Вибрано: {{count}}",
+      "forwardDisabled": "Деякі вибрані вкладення не можна переслати",
+      "deleteDisabled": "Ви можете видаляти лише власні вкладення"
+    },
+    "deleteAttachmentsTitle": "Видалити вкладення",
+    "deleteAttachmentsDescription": "Ви хочете видалити ці {{number}} вкладення? Якщо ви їх видалите, файли будуть видалені назавжди. Підписи до оригінальних повідомлень, якщо вони є, також будуть видалені з історії розмов.",
+    "deleteAttachmentsConfirm": "Так, видалити вкладення"
+  },
+  "preview": {
+    "video": {
+      "error": "Це відео не можна відтворити у вашому браузері. Завантажте його."
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.venv/
+__pycache__/
+*.py[cod]
+
+# Reproducible local caches and generated staging artifacts
+.cache/upstream/
+.cache/translation/
+.cache/checkpoints/
+translations/generated/
+translations/merged/
+# Live Carbonio snapshots and environment-specific deployment evidence are
+# deliberately kept out of the public upstream-contribution repository.
+translations/live-carbonio-*/
+reports/live-*.md
+reports/live-*.json
+reports/locale-registry-investigation*.md
+artifacts/
+artifacts/package-staging-*/rootfs/
+artifacts/package-staging-*/*.tar
+review/pending/
+
+# Temporary/generated reports. Baseline discovery/audit/validation/glossary,
+# review queue, mock-pipeline evidence, and real-pilot plan stay trackable.
+reports/generated/
+reports/*.tmp
+reports/mock-translation*.json
+reports/mock-merge.json
+reports/mock-validation*.json
+reports/mock-validation*.md
+reports/review-merge-*.json
+reports/review-validation-*.json
+reports/review-validation-*.md
+reports/translate-dry-run.json
+reports/real-pilot-review.json
+reports/real-pilot-review.md
+reports/manual-pilot-validation.json
+reports/manual-pilot-validation.md
+
+# Secrets and local provider configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa
+id_rsa.*
+credentials*.json
+secrets*.json
+secrets*.yaml
+secrets*.yml

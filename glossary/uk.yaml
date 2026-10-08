@@ -1,0 +1,14 @@
+# Initial glossary is intentionally small. Expand it from audited existing UK
+# resources before any real translation run.
+terms:
+  Account: "Обліковий запис"
+  Mailbox: "Поштова скринька"
+  Inbox: "Вхідні"
+  Sent: "Надіслані"
+  Drafts: "Чернетки"
+  Trash: "Кошик"
+  Calendar: "Календар"
+  Contacts: "Контакти"
+  Domain: "Домен"
+  Alias: "Псевдонім"
+  Quota: "Квота"

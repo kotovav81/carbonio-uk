@@ -1,0 +1,53 @@
+{
+  "label": {
+    "app_name": "Сховище"
+  },
+  "quota": {
+    "banner": {
+      "overQuota": "Ваше сховище заповнене. Видаліть великі елементи або зверніться до адміністратора, щоб збільшити ліміт сховища.",
+      "thresholdReached": "Ваше сховище майже заповнене. Видаліть великі елементи або зверніться до адміністратора, щоб збільшити ліміт сховища."
+    },
+    "limitedSpace": "Використано {{used}} із {{limit}} ({{percentage}}%)",
+    "module": {
+      "available": "Доступно",
+      "files": "Файли",
+      "mailbox": "Пошта, календарі, контакти",
+      "wsc": "Чати"
+    },
+    "unlimitedSpace": "Використано {{used}} із <bold>Необмежено</bold>"
+  },
+  "settings": {
+    "error": {
+      "quotaAPIErrorDescription": "Наразі не вдалося завантажити інформацію про сховище.",
+      "quotaAPIErrorResolution": "Спробуйте оновити сторінку або зверніться до адміністратора, якщо проблема не зникне."
+    },
+    "titles": {
+      "primaryAccountSection": "Сховище",
+      "settingsView": "Сховище",
+      "sharedAccountsSection": "Сховище спільних облікових записів"
+    }
+  },
+  "size": {
+    "unitMeasure_B": "Б",
+    "unitMeasure_KB": "КБ",
+    "unitMeasure_MB": "МБ",
+    "unitMeasure_GB": "ГБ",
+    "unitMeasure_TB": "ТБ",
+    "unitMeasure_PB": "ПБ",
+    "unitMeasure_EB": "ЕБ",
+    "unitMeasure_ZB": "ЗБ",
+    "unitMeasure_YB": "ЙБ"
+  },
+  "total_quota_usage_component": {
+    "caption": {
+      "api_error": "Сховище недоступне",
+      "limited": "{{formattedUsed}} із {{formattedLimit}} ({{formattedPercentage}})",
+      "unlimited": "Використано {{formattedUsed}} із необмеженого сховища"
+    },
+    "shared_quota_alert": {
+      "error": "Сховище спільного облікового запису заповнене",
+      "warning": "Сховище спільного облікового запису майже заповнене"
+    },
+    "tooltip": "Переглянути відомості про сховище"
+  }
+}
