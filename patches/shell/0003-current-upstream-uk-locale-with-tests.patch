@@ -1,0 +1,73 @@
+diff --git a/src/constants/default-locales.ts b/src/constants/default-locales.ts
+index cb20164..ec0a1ab 100644
+--- a/src/constants/default-locales.ts
++++ b/src/constants/default-locales.ts
+@@ -67,6 +67,12 @@ export const STATIC_LOCALES: Record<string, LocaleValue> = {
+ 		labelKey: 'locale.label_polish',
+ 		labelDefaultValue: 'Polish - {{value}}'
+ 	},
++	uk: {
++		name: 'Українська',
++		value: 'uk',
++		labelKey: 'locale.label_ukrainian',
++		labelDefaultValue: 'Ukrainian - {{value}}'
++	},
+ 	ro: {
+ 		name: 'română',
+ 		value: 'ro',
+diff --git a/src/constants/locales.ts b/src/constants/locales.ts
+index 2b5ae2a..d262f7c 100644
+--- a/src/constants/locales.ts
++++ b/src/constants/locales.ts
+@@ -75,6 +75,12 @@ export const DATE_FNS_LOCALE: Record<
+ 				({ pl }) => pl
+ 			)
+ 	},
++	uk: {
++		localeImportPath: () =>
++			/* webpackMode: "lazy", webpackChunkName: "uk" */ import('date-fns/locale/uk').then(
++				({ uk }) => uk
++			)
++	},
+ 	ro: {
+ 		localeImportPath: () =>
+ 			/* webpackMode: "lazy", webpackChunkName: "ro" */ import('date-fns/locale/ro').then(
+diff --git a/src/constants/uk-locale.test.ts b/src/constants/uk-locale.test.ts
+new file mode 100644
+index 0000000..83d045d
+--- /dev/null
++++ b/src/constants/uk-locale.test.ts
+@@ -0,0 +1,33 @@
++/*
++ * SPDX-FileCopyrightText: 2026 Zextras <https://www.zextras.com>
++ *
++ * SPDX-License-Identifier: AGPL-3.0-only
++ */
++/*
++ * SPDX-FileCopyrightText: 2026 Котов Андрій
++ *
++ * SPDX-License-Identifier: AGPL-3.0-only
++ */
++import { describe, expect, it } from 'vitest';
++
++import { DEFAULT_LOCALES, STATIC_LOCALES } from './default-locales';
++import { DATE_FNS_LOCALE } from './locales';
++
++describe('Ukrainian locale registration', () => {
++	it('registers uk with its native label and preserves existing locales', () => {
++		expect(STATIC_LOCALES.uk).toEqual({
++			name: 'Українська',
++			value: 'uk',
++			labelKey: 'locale.label_ukrainian',
++			labelDefaultValue: 'Ukrainian - {{value}}'
++		});
++		expect(DEFAULT_LOCALES.uk).toEqual(STATIC_LOCALES.uk);
++		expect(STATIC_LOCALES.pl.value).toBe('pl');
++		expect(STATIC_LOCALES.en.value).toBe('en');
++	});
++
++	it('loads Ukrainian date-fns data using the uk identifier', async () => {
++		const locale = await DATE_FNS_LOCALE.uk?.localeImportPath();
++		expect(locale?.code).toBe('uk');
++	});
++});

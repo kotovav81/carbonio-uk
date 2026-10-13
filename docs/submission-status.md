@@ -1,5 +1,12 @@
 # Upstream submission status
 
+Current external submission (2026-10-13): 11 PRs opened, including 10 component
+catalog PRs and a separate selector-label PR. Functional Shell and Storages
+fork creation is temporarily blocked by GitHub. See
+[the dated submission report](submission-2026-10-13.md) for links and tests.
+The sections below describe the earlier preparation state, not completion of
+all remaining submissions.
+
 ## Ready now
 
 - Thirteen component-specific Ukrainian catalogs are staged under
