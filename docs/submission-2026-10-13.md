@@ -6,6 +6,9 @@ source; Russian is reference-only. AI-assisted candidates received manual review
 and structural checks; complete independent linguistic review is not claimed.
 No infrastructure, branding, credentials, or deployment artifacts are submitted.
 
+Maintainer integration request:
+https://github.com/zextras/carbonio-webui-i18n/issues/87.
+
 ## Open pull requests
 
 | Component | PR |
