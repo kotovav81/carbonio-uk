@@ -8,6 +8,13 @@ No infrastructure, branding, credentials, or deployment artifacts are submitted.
 
 Maintainer integration request:
 https://github.com/zextras/carbonio-webui-i18n/issues/87.
+It was automatically closed by zextras-support[bot] as not planned with a
+redirect to the Community Forum; this is not a maintainer translation review.
+All 11 submitted PRs were independently verified still open afterwards.
+Forum draft: `upstream/forum-post-2026-10-13.md`. Target category:
+https://community.zextras.com/forum/carbonio-general-thread/.
+Forum publication is pending an authenticated forum session; GitHub login
+alone does not establish such a session. No forum post has been published.
 
 ## Open pull requests
 
